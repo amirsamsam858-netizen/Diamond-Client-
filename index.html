@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الماس کلاینت | ALMAS CLIENT</title>
+    <style>
+        /* استایل‌های اصلی و تم آبی */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0e17; /* سرمه‌ای خیلی تیره */
+            color: #e0e6ed;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        /* هدر با رنگ آبی درخشان */
+        header {
+            background: linear-gradient(135deg, #004e92, #000428);
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 4px solid #00d2ff;
+            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
+        }
+
+        header h1 {
+            color: #00d2ff; /* رنگ آبی الماس */
+            margin: 0;
+            font-size: 3.5rem;
+            text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+            letter-spacing: 3px;
+        }
+
+        /* منوی ناوبری */
+        nav {
+            background-color: #16213e;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #00d2ff;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00d2ff;
+            text-shadow: 0 0 10px #00d2ff;
+        }
+
+        /* کانتینر اصلی */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            background: rgba(22, 33, 62, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 210, 255, 0.2);
+            backdrop-filter: blur(10px); /* افکت شیشه‌ای */
+        }
+
+        h2 {
+            color: #00d2ff;
+            font-size: 2rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::after {
+            content: "";
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(to left, #00d2ff, transparent);
+            margin-right: 20px;
+        }
+
+        /* بخش اخبار (قابل ویرایش) */
+        .news-box {
+            border-right: 5px solid #00d2ff;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .news-date {
+            color: #00d2ff;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* بخش دانلود (دکمه‌ها) */
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .btn-download {
+            background: linear-gradient(45deg, #004e92, #00d2ff);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 210, 255, 0.5);
+            filter: brightness(1.2);
+        }
+
+        /* بخش درباره ما */
+        .about-content {
+            font-size: 1.3rem;
+            color: #cfd8dc;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #546e7a;
+            font-size: 0.9rem;
+        }
+
+        /* ریسپانسیو برای موبایل */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            nav { flex-direction: column; align-items: center; }
+            nav a { margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>الماس کلاینت</h1>
+    </header>
+
+    <nav>
+        <a href="#news">اخبار</a>
+        <a href="#download">دانلود</a>
+        <a href="#about">درباره</a>
+    </nav>
+
+    <div class="container">
+        
+        <!-- بخش اخبار -->
+        <section id="news">
+            <h2>اخبار جدید</h2>
+            
+            <!-- برای اضافه کردن خبر جدید: این بلوک را کپی و پایین آن پیست کنید -->
+            <div class="news-box">
+                <span class="news-date">۱۴۰۵/۰۳/۲۷</span>
+                <div class="news-text">خوش آمدید! نسخه جدید الماس کلاینت در راه است.</div>
+            </div>
+
+            <div class="news-box">
+                <span class="news-date">۱۴۰۵/۰۳/۲۵</span>
+                <div class="news-text">بهینه‌سازی سرعت دانلود در سرورهای جدید انجام شد.</div>
+            </div>
+            <!-- پایان بخش اخبار -->
+
+        </section>
+
+        <!-- بخش دانلود -->
+        <section id="download">
+            <h2>بخش دانلود</h2>
+            <div class="download-grid">
+                <!-- برای اضافه کردن دکمه جدید: فقط خط زیر را کپی و در اینجا پیست کنید -->
+                <a href="https://link1.com" class="btn-download" target="_blank">دانلود نسخه اصلی</a>
+                <a href="https://link2.com" class="btn-download" target="_blank">دانلود نسخه موبایل</a>
+                <a href="https://link3.com" class="btn-download" target="_blank">دانلود فایل تنظیمات</a>
+                <!-- پایان بخش دانلود -->
+            </div>
+        </section>
+
+        <!-- بخش درباره ما -->
+        <section id="about">
+            <h2>درباره ما</h2>
+            <div class="about-content">
+                تیم الماس
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 الماس کلاینت | طراحی شده با قدرت الماس
+    </footer>
+
+</body>
+</html>
